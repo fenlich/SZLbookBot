@@ -1,4 +1,3 @@
-#можно добавить /help и соотв. кнопку в start, если так, то тогда кнопка "заново" и функции с жанрами будет возвращать START
 import logging
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import (
@@ -104,12 +103,6 @@ async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE) -> str:
     return MENU
 
 
-
-# async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-#     """End Conversation by command."""
-#     await update.message.reply_text("Ладно, пока :(")
-
-#     return START
 
 async def fantasy(update: Update, context: ContextTypes.DEFAULT_TYPE) -> str:
     again()
